@@ -8,12 +8,12 @@ import threading
 from datetime import datetime, timedelta
 import json
 
-API_TOKEN = "7538443922:AAHuQ6GT3-b9tXoN5o9hUf4KLjn3hFxdpVI"  # Replace with your bot's API token
+API_TOKEN = "7455908121:AAHq9TrEyF-q5x0wONoiVo71q1Q6cK2jSzc"  # Replace with your bot's API token
 bot = telebot.TeleBot(API_TOKEN)
 
 # Replace with your group chat ID
-GROUP_CHAT_ID = -1002634199130
-ADMIN_USER_IDS = {6137921982}
+GROUP_CHAT_ID = -ANYONE knows that how to make a bot public like I want to receive message sent by the user on that bot
+ADMIN_USER_IDS = {7832123923}
 
 # Sample data storage for user data
 user_data = {}
@@ -23,12 +23,12 @@ banned_users = set()
 
 # Define the point cost for each service
 service_points = {
-    "PRIME VIDEO": 15,
-    "Crunchyroll": 10,
+    "PRIME VIDEO": 5,
+    "Crunchyroll": 1,
 }
 
 # Global Channel List
-REQUIRED_CHANNELS = ["@GODXSTORRE", "@EchidnaXDiscussion"]
+REQUIRED_CHANNELS = ["@crunchyrollacc001"]
 
 # Global variables
 bonus_time = {}
@@ -36,7 +36,7 @@ previous_menu = {}
 last_reminder_time = {}
 
 # Correct Direct Image Link
-IMAGE_URL = "https://i.ibb.co/wN7LRkRL/x.jpg"
+IMAGE_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxp_4QFVHCBUJNazYfe5-zviUHIu7FvSyjgq7SD9_7LxbthgGKcTNdzTI&s=10"
 
 # Function to check if a user is banned
 def check_banned(chat_id):
@@ -45,7 +45,7 @@ def check_banned(chat_id):
 # Function to create the main menu
 def main_menu(chat_id, user_id):
     text = f"""
-‍♂ Wᴇʟᴄᴏᴍᴇ  彡[𝑵𝑶𝑻 𝑿 𝑿𝒀𝑵彡](tg://user?id={user_id})  
+‍♂ Wᴇʟᴄᴏᴍᴇ  彡[NEW USER彡](tg://user?id={user_id})  
 ➖➖➖➖➖➖➖➖➖➖➖➖➖  
 ⌛ Jᴏɪɴ Aʟʟ Cʜᴀɴɴᴇʟs Aɴᴅ Cʟɪᴄᴋ Oɴ Jᴏɪɴᴇᴅ Tᴏ Sᴛᴀʀᴛ Oᴜʀ Bᴏᴛ  
 ➖➖➖➖➖➖➖➖➖➖➖➖➖  
@@ -53,9 +53,8 @@ def main_menu(chat_id, user_id):
 
     markup = types.InlineKeyboardMarkup()
     join_buttons = [
-        types.InlineKeyboardButton("Jᴏɪɴ", url="https://t.me/GODXSTORRE"),
-        types.InlineKeyboardButton(" Jᴏɪɴ", url="https://t.me/EchidnaXDiscussion"),
-        types.InlineKeyboardButton("Jᴏɪɴ", url="https://t.me/+FLMHwzjUSRAwMDk1")
+        types.InlineKeyboardButton("Jᴏɪɴ", url="https://t.me/crunchyrollacc001")
+        
     ]
     joined_button = types.InlineKeyboardButton(" [ Jᴏɪɴᴇᴅ ] ", callback_data="joined")
 
