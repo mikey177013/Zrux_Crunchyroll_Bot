@@ -12,7 +12,7 @@ API_TOKEN = "7455908121:AAHq9TrEyF-q5x0wONoiVo71q1Q6cK2jSzc"  # Replace with you
 bot = telebot.TeleBot(API_TOKEN)
 
 # Replace with your group chat ID
-GROUP_CHAT_ID = -ANYONE knows that how to make a bot public like I want to receive message sent by the user on that bot
+GROUP_CHAT_ID = -1002896123638
 ADMIN_USER_IDS = {7832123923}
 
 # Sample data storage for user data
